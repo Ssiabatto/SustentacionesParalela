@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.edu.unal.paralela.ReciprocalArraySumTest" time="41.574" tests="4" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.15+6"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.15.6-hotspot\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\UN\2025-1\Paralela y Distribuida\Sustentaciones\Ejercicio1\ejercicio_1"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\UN\2025-1\Paralela y Distribuida\Sustentaciones\Ejercicio1\ejercicio_1"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.15+6"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\snsc2\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.9.10\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.15.6-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.15.6-hotspot\bin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\HP\HP One Agent;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\Wireshark;C:\Windows\System32\Wbem;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\ucrt64\bin;C:\Program Files\Graphviz\bin;C:\Program Files\poppler-24.08.0\Library\bin;D:\Programas\NodeJS\;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;d:\Programas\cursor\resources\app\bin;d:\Programas\cursor\resources\app\bin;C:\Program Files\Docker\Docker\resources\bin;D:\Programas\Git\cmd;C:\apache-maven-3.9.10\bin;C:\Users\snsc2\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\snsc2\AppData\Local\Programs\Python\Python310\;C:\Users\snsc2\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\snsc2\AppData\Local\Programs\Python\Python312\;C:\Users\snsc2\AppData\Local\Microsoft\WindowsApps;C:\Users\snsc2\AppData\Local\GitHubDesktop\bin;C:\Program Files\CodeBlocks\MinGW\bin;C:\Users\snsc2\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\swipl\bin;C:\Users\snsc2\AppData\Roaming\npm;C:\Users\snsc2\.dotnet\tools;C:\Users\snsc2\IntelliJ IDEA Community Edition 2025.1.1.1\bin;;c:\Users\snsc2\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="maven.conf" value="C:\apache-maven-3.9.10/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.9.10\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\snsc2"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="snsc2"/>
+    <property name="java.class.path" value="C:\apache-maven-3.9.10\boot\plexus-classworlds-2.9.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.15.6-hotspot"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.15"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="maven.home" value="C:\apache-maven-3.9.10"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-17.0.15+6"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testParSimpleTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="23.104"/>
+  <testcase name="testParSimpleTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.227"/>
+  <testcase name="testParManyTaskTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="18.01">
+    <failure message="Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  9,600000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 3,796296x veces" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  9,600000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 3,796296x veces
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at co.edu.unal.paralela.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion(ReciprocalArraySumTest.java:149)
+</failure>
+  </testcase>
+  <testcase name="testParManyTaskTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.233">
+    <failure message="Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse 7,200000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 2,000000x veces" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse 7,200000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 2,000000x veces
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at co.edu.unal.paralela.ReciprocalArraySumTest.testParManyTaskTwoMillion(ReciprocalArraySumTest.java:137)
+</failure>
+  </testcase>
+</testsuite>
