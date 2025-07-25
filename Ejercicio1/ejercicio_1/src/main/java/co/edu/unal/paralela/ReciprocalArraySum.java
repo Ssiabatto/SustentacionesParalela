@@ -200,8 +200,25 @@ public final class ReciprocalArraySum {
 
     protected static double parManyTaskArraySum(final double[] input, final int numTasks) {
         ForkJoinPool pool = new ForkJoinPool(numTasks);
-        ReciprocalArraySumTask root = new ReciprocalArraySumTask(0, input.length, input);
-        pool.invoke(root);
-        return root.getValue();
+        ReciprocalArraySumTask[] tasks = new ReciprocalArraySumTask[numTasks];
+        // Crear tareas para cada chunk
+        for (int i = 0; i < numTasks; i++) {
+            int start = getChunkStartInclusive(i, numTasks, input.length);
+            int end = getChunkEndExclusive(i, numTasks, input.length);
+            tasks[i] = new ReciprocalArraySumTask(start, end, input);
+        }
+        // Lanzar todas las tareas excepto la última (que se invoca directamente)
+        for (int i = 0; i < numTasks - 1; i++) {
+            tasks[i].fork();
+        }
+        // Ejecutar la última tarea en el hilo actual
+        pool.invoke(tasks[numTasks - 1]);
+        // Esperar a que todas las tareas terminen y sumar los resultados
+        double sum = 0;
+        for (int i = 0; i < numTasks; i++) {
+            if (i < numTasks - 1) tasks[i].join();
+            sum += tasks[i].getValue();
+        }
+        return sum;
     }
 }
